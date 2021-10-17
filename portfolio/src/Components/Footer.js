@@ -3,16 +3,10 @@ import React from "react";
 function Footer() {
   return (
 <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
+  <div class="card-body d-flex justify-content-center">
+    <a href="https://github.com/LukeRT-UWA" class="btn btn-primary btn-spacing">Github</a>
+    <a href="https://www.linkedin.com/in/luke-thompson-9085b511a/" class="btn btn-primary btn-spacing">Linkedin</a>
+    <a href="#" class="btn btn-primary btn-spacing">Twitter</a>
   </div>
 </div>
   );
