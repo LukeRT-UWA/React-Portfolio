@@ -2,16 +2,10 @@ import React, {useState} from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import PortfolioContainer from "./Components/PortfolioContainer";
-// import NavTabs from './NavTabs';
 import About from './Components/pages/About';
 import Portfolio from './Components/pages/Portfolio';
 import Contact from './Components/pages/Contact';
 import Resume from './Components/pages/Resume';
-
-
-
-
-
 
 function App() {
 
