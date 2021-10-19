@@ -7,7 +7,7 @@ import React from 'react';
 
 const styles = {
   pageHeightStyle: {
-    minHeight: '600px'
+    backgroundColor: "#f0f8ff"
   }
 }
 
@@ -15,7 +15,7 @@ export default function PortfolioContainer({renderPage}) {
 
 
   return (
-    <div style={styles.pageHeightStyle}>
+    <div className="vh-100" style={styles.pageHeightStyle}>
       {renderPage()}
     </div>
   );

@@ -1,17 +1,13 @@
 import React from 'react';
-
-const styles = {
-  cardWidthStyle: {
-    width: '18rem'
-  }
-}
+import Cards from '../Cards'
 
 const projects = [
   {
     id: 1,
     name: "Milk",
-    description: true,
-    deployedLink: "www.",
+    description: "this is a description",
+    subtitle: "Subtitle",
+    deployedLink: "https://project2lukert.herokuapp.com/",
     repoLink: "www."
   },
   {
@@ -51,31 +47,11 @@ const projects = [
   }
 ];
 
-function List(props) {
-  return (
-    <div className="row row-cols-1 row-cols-md-3 g-4">
-      {props.projects.map(item => (
-      <div className="card m-2" style={styles.cardWidthStyle} key={item.id}>
-      <div className="card-body">
-        <h5 className="card-title">{item.name}</h5>
-        <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="card-link">Deployed</a>
-        <a href="#" className="card-link">Github Repo</a>
-      </div>
-      </div>
-
-      ))}
-    </div>
-    
-  );
-}
-
-export default function About() {
+export default function Portfolio() {
   return (
     <div className = "w-50 mx-auto">
       <h1 className ="pb-4 pt-2">Portfolio</h1>
-<List projects={projects} />
+<Cards projects={projects} />
     </div>
   );
 }
