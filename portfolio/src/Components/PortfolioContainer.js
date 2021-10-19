@@ -5,11 +5,17 @@ import React from 'react';
 // import Blog from './pages/Blog';
 // import Contact from './pages/Contact';
 
+const styles = {
+  pageHeightStyle: {
+    minHeight: '600px'
+  }
+}
+
 export default function PortfolioContainer({renderPage}) {
 
 
   return (
-    <div>
+    <div style={styles.pageHeightStyle}>
       {renderPage()}
     </div>
   );

@@ -10,46 +10,58 @@ const projects = [
   {
     id: 1,
     name: "Milk",
-    purchased: true
+    description: true,
+    deployedLink: "www.",
+    repoLink: "www."
   },
   {
     id: 2,
     name: "Eggs",
-    purchased: true
+    description: true,
+    deployedLink: "www.",
+    repoLink: "www."
   },
   {
     id: 3,
     name: "Cheese",
-    purchased: false
+    description: false,
+    deployedLink: "www.",
+    repoLink: "www."
   },
   {
     id: 4,
     name: "Cake Mix",
-    purchased: false
+    description: false,
+    deployedLink: "www.",
+    repoLink: "www."
   },
   {
     id: 5,
     name: "Carrots",
-    purchased: false
+    description: false,
+    deployedLink: "www.",
+    repoLink: "www."
   },
   {
     id: 6,
     name: "Juice",
-    purchased: true
+    description: true,
+    deployedLink: "www.",
+    repoLink: "www."
   }
 ];
 
 function List(props) {
   return (
-    <div className="card-deck">
+    <div className="row row-cols-1 row-cols-md-3 g-4">
       {props.projects.map(item => (
-      <div className="card" style={styles.cardWidthStyle} key={item.id}>
+      <div className="card m-2" style={styles.cardWidthStyle} key={item.id}>
       <div className="card-body">
         <h5 className="card-title">{item.name}</h5>
         <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="card-link">Card link</a>
-        <a href="#" className="card-link">Another link</a>
+        <a href="#" className="card-link">Deployed</a>
+        <a href="#" className="card-link">Github Repo</a>
       </div>
       </div>
 
@@ -61,8 +73,8 @@ function List(props) {
 
 export default function About() {
   return (
-    <div>
-      <h1>Portfolio</h1>
+    <div className = "w-50 mx-auto">
+      <h1 className ="pb-4 pt-2">Portfolio</h1>
 <List projects={projects} />
     </div>
   );
