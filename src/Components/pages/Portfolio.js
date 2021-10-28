@@ -9,7 +9,7 @@ const projects = [
     subtitle: "Joke categorisation/review app",
     deployedLink: "https://project2lukert.herokuapp.com/",
     repoLink: "https://github.com/LukeRT-UWA/Am-I-a-Joke-to-you.",
-    image: "../assets/images/Project2.jpg"
+    image: "./assets/images/Project2.jpg"
   },
   {
     id: 2,
